@@ -33,6 +33,7 @@ lazy val root = project.in(file("."))
       Dependencies.Libraries.scaldingCommons,
       Dependencies.Libraries.scaldingJson,
       Dependencies.Libraries.scalaz7,
+      Dependencies.Libraries.scopt,
       Dependencies.Libraries.commonEnrich,
       Dependencies.Libraries.igluClient,
       // Scala (test only)

@@ -27,6 +27,7 @@ object Dependencies {
     // Scala
     val scalding         = "0.11.2"
     val scalaz7          = "7.0.0"
+    val scopt            = "3.5.0"
     val commonEnrich     = "0.24.0"
     val igluClient       = "0.4.0"
     // Scala (test only)
@@ -52,6 +53,7 @@ object Dependencies {
     val scaldingCommons  = "com.twitter"               %% "scalding-commons"             % V.scalding exclude( "cascading", "cascading-local" ) exclude( "cascading", "cascading-hadoop" )
     val scaldingJson     = "com.twitter"               %% "scalding-json"                % V.scalding exclude( "cascading", "cascading-local" ) exclude( "cascading", "cascading-hadoop" )
     val scalaz7          = "org.scalaz"                %% "scalaz-core"                  % V.scalaz7
+    val scopt            = "com.github.scopt"          %% "scopt"                        % V.scopt
     val commonEnrich     = "com.snowplowanalytics"     %  "snowplow-common-enrich"       % V.commonEnrich
     val igluClient       = "com.snowplowanalytics"     %% "iglu-scala-client"            % V.igluClient
     // Scala (test only)
