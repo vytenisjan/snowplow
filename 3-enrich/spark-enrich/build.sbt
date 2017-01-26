@@ -28,6 +28,8 @@ lazy val root = project.in(file("."))
       Dependencies.Libraries.cascadingLocal,
       Dependencies.Libraries.cascadingHadoop,
       // Scala
+      Dependencies.Libraries.sparkCore,
+      Dependencies.Libraries.sparkSQL,
       Dependencies.Libraries.scaldingCore,
       Dependencies.Libraries.scaldingArgs,
       Dependencies.Libraries.scaldingCommons,

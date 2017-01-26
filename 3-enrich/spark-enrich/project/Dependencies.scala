@@ -25,6 +25,7 @@ object Dependencies {
     val hadoop           = "2.4.1"
     val cascading        = "2.6.0"
     // Scala
+    val spark            = "2.1.0"
     val scalding         = "0.11.2"
     val scalaz7          = "7.0.0"
     val scopt            = "3.5.0"
@@ -48,6 +49,8 @@ object Dependencies {
     val cascadingLocal   = "cascading"                 %  "cascading-local"              % V.cascading
     val cascadingHadoop  = "cascading"                 %  "cascading-hadoop2-mr1"        % V.cascading
     // Scala
+    val sparkCore        = "org.apache.spark"          %% "spark-core"                   % V.spark        % "provided"
+    val sparkSQL         = "org.apache.spark"          %% "spark-sql"                    % V.spark        % "provided"
     val scaldingCore     = "com.twitter"               %% "scalding-core"                % V.scalding exclude( "cascading", "cascading-local" ) exclude( "cascading", "cascading-hadoop" )
     val scaldingArgs     = "com.twitter"               %% "scalding-args"                % V.scalding exclude( "cascading", "cascading-local" ) exclude( "cascading", "cascading-hadoop" )
     val scaldingCommons  = "com.twitter"               %% "scalding-commons"             % V.scalding exclude( "cascading", "cascading-local" ) exclude( "cascading", "cascading-hadoop" )
