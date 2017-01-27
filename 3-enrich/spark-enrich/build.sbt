@@ -27,6 +27,7 @@ lazy val root = project.in(file("."))
       Dependencies.Libraries.cascadingCore,
       Dependencies.Libraries.cascadingLocal,
       Dependencies.Libraries.cascadingHadoop,
+      Dependencies.Libraries.hadoopLZO,
       // Scala
       Dependencies.Libraries.sparkCore,
       Dependencies.Libraries.sparkSQL,
@@ -36,6 +37,8 @@ lazy val root = project.in(file("."))
       Dependencies.Libraries.scaldingJson,
       Dependencies.Libraries.scalaz7,
       Dependencies.Libraries.scopt,
+      Dependencies.Libraries.shapeless,
+      compilerPlugin(Dependencies.Libraries.paradise),
       Dependencies.Libraries.commonEnrich,
       Dependencies.Libraries.igluClient,
       // Scala (test only)
